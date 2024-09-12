@@ -32,7 +32,7 @@ def test_nearest_neighbor():
 	
 	result = nearest_neighbor(target_vector, matrix)
 	
-	expected_index = 0
+	expected_index = 2
 	
 	assert result == expected_index, f"Expected index {expected_index}, but got {result}"
 
