@@ -42,7 +42,7 @@ def nearest_neighbor(target_vector, vectors):
     currentBestIndex = -1;
     i=0;
     for i in range(len(vectors)):
-        if(cosine_similarity(target_vector,vectors[i]) > currentBest):
+        if(abs(currentBest)> abs(cosine_similarity(target_vector,vectors[i])) ):
             currentBest = cosine_similarity(target_vector,vectors[i]);
             currentBestIndex = i;
     
